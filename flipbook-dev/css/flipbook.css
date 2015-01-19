@@ -1,0 +1,109 @@
+.ui-mobile-viewport {
+	outline:none;
+}
+body {
+    overflow:hidden;
+}
+img {
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+}
+.flipbook-container {
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	height:100%;
+	top:1px;
+	bottom:0px;
+	right:1px;
+	left:1px;
+	position:absolute;
+	overflow:visible;
+}
+.flipbook {
+	margin-left:auto;
+	margin-right:auto;
+	top:1px;
+	right:0px;
+	left:0px;
+	position:absolute;
+	border: 1px solid black;
+	bottom:0px;
+}
+.page {
+	width:100%;
+	height:100%;
+	background-color:white;
+}
+.thumbnail {
+	width:355px;
+	height:266px;
+	background-size:355px 266px;
+	float:left;
+}
+.bg-img {
+position:absolute;
+}
+.back {
+	background-image: url("../images/previous.png");
+	background-repeat: no-repeat;
+	background-size: 86px 86px;
+	opacity: .8;
+	height: 86px;
+	width: 86px;
+	cursor:pointer;
+	position:absolute;
+	z-index:10000;
+}
+.forward {
+	background-image: url("../images/next.png");
+	background-repeat: no-repeat;
+	background-size: 86px 86px;
+	opacity: .8;
+	height: 86px;
+	width: 86px;
+	cursor:pointer;
+	position:absolute;
+	z-index:10000;
+}
+.zoomin {
+	background-image: url("../images/zoom-in.png");
+	background-repeat: no-repeat;
+	background-size: 86px 86px;
+	opacity: .8;
+	height: 86px;
+	width: 86px;
+	cursor:pointer;
+	position:absolute;
+	z-index:10000;
+}
+.zoomout {
+	background-image: url("../images/zoom-out.png");
+	background-repeat: no-repeat;
+	background-size: 86px 86px;
+	opacity: .8;
+	height: 86px;
+	width: 86px;
+	cursor:pointer;
+	position:absolute;
+	z-index:10000;
+}
+.thumbviewbutton {
+	background-image: url("../images/thumbnail.png");
+	background-repeat: no-repeat;
+	background-size: 86px 86px;
+	opacity: .8;
+	height: 86px;
+	width: 86px;
+	cursor:pointer;
+	position:absolute;
+	z-index:10000;
+}
+.thumbview {
+	margin-bottom:86px;
+}

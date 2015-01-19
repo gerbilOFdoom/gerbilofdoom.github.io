@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN"
+"http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+
+<html class="no-js">
+<head>
+	<title>Responsive Flip Book powered by jQuery</title>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<!-- Stylesheet -->
+	<!-- Icons courtesy of gentleface.com -->
+	<link rel="stylesheet" type="text/css" href="css/flipbook.css" />
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/yepnope.js"></script>
+	<script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.1.7.js"></script>
+	<script type="text/javascript" src="js/flipbook.js"></script>
+	
+</head>
+<body>
+<div class="loading" style="margin-left:auto;margin-right:auto;width:50px;font-size:xx-large;">Loading</div>
+<div id="flipbook-container" class="flipbook-container" style="display:none">
+	
+	<!-- Flip book -->
+
+	<div id="flipbook" class="flipbook">
+		<!-- Start Flip Book Pages -->
+		
+		<!-- Cover -->
+		<div class="page">
+			<img src="pages/1.jpg" class="bg-img" />
+		</div>
+		
+		<div class="page">
+			<img src="pages/2.jpg" class="bg-img" />
+		</div>
+		<div class="page">
+			<img src="pages/3.jpg" class="bg-img" />
+		</div>
+		<div class="page">
+			<img src="pages/4.jpg" class="bg-img" />
+		</div>
+		<div class="page">
+			<img src="pages/5.jpg" class="bg-img" />
+		</div>
+		<div class="page">
+			<img src="pages/6.jpg" class="bg-img" />
+		</div>
+		<div class="page">
+			<img src="pages/7.jpg" class="bg-img" />
+		</div>
+		<div class="page">
+			<img src="pages/8.jpg" class="bg-img" />
+		</div>
+		<div class="page">
+			<img src="pages/9.jpg" class="bg-img" />
+		</div>
+		<!-- Back Cover -->
+		<div class="page">
+			<img src="pages/1.jpg" class="bg-img" onClick="$('[id=flipbook]').turn('page',2);"/>
+		</div>
+		
+		<!-- end Flip Book Pages -->
+
+	</div> <!-- end Flip Book -->
+	<div id="thumbview" class="thumbview"></div>
+	<div id="back " title="Previous Page" class="back turn"></div>
+	<div id="thumbviewbutton" class="thumbviewbutton"></div>
+	<div id="zoomin" class="zoomin"></div>
+	<div class="forward turn" title="Next Page" id="forward"></div>
+	<div id="zoomout" class="zoomout"></div>
+
+</div> <!-- end Flip Book Container -->
+<script type="text/javascript">
+yepnope({
+	test:Modernizr.csstransforms && Modernizr.csstransforms3d,
+	yep:'js/turn.js',
+	nope:'js/turn.html4.js',
+	both:['js/jquery-ui-1.8.20.custom.min.js', 'js/viewportsize.min.js' , 'js/zoom.js' ,'js/hash.js', 'js/flipbook.js', 'js/jgestures.min.js'],
+	complete: init
+});
+</script>
+</body>
+</html>
